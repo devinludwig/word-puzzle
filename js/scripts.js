@@ -7,12 +7,12 @@ $(document).ready(function(){
       // alert(splitText[index]);
       if(splitText[index] === 'a'|| splitText[index] === 'e'||splitText[index] === 'i'||splitText[index] === 'o'||splitText[index] === 'u')
       splitText[index] = '-'
-        // splitText.replace(splitText[index], "-")
     }
-    alert(splitText);
 
+    splitText = splitText.join('');
     $("p").text(splitText);
     $("#output").show();
+    $('#blanks form').hide();
     event.preventDefault();
   });
 
